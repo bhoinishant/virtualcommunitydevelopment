@@ -1,0 +1,97 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width">
+</head>
+<body>
+  <style>
+  
+body{
+background-image: url('../img/contact1.jpg');
+background-repeat: no-repeat;
+background-attachment:fixed;
+background-size: cover;
+
+}
+* {
+
+  margin:10px;
+  padding:10px;
+  box-sizing:border-box;
+}
+.aa{
+	font-weight: 900;
+	font-size: 20px;
+	color: #34D3DB;
+}
+
+.container {
+	box-shadow: 8px 6px grey ;
+  border: 1px solid grey;
+  border-radius: 10px;
+  max-width:400px;
+  width:100%;
+  margin:0 auto;
+  position:relative;
+}
+	.inp, .msg-box{
+     box-shadow: 4px 5px black; 	
+     background: transparent;
+      width: 100%;
+      border-radius: 10px;
+      color: black;
+      border-right: 5px solid #dc143c;
+      border-left: 5px solid #dc143c;
+      resize: none;
+      background: linear-gradient(to right, #A3D6EC, #E5C42B);
+    }
+ .sub-btn{
+      width: 100%;
+      border-radius: 10px;
+      background: linear-gradient(#dc143c,#800000);
+      cursor: pointer;
+      font-size: 20px;
+      text-shadow: 1px 1px 1px #444;
+    }
+ .sub-btn:hover{
+      background: linear-gradient(#800000,#dc143c);
+      transition: all ease-out 0.2s;
+    }
+
+.inp{
+	font-weight: 600;
+	background-color: black;
+}
+
+}
+
+  </style>
+  <div class="container">  
+    <div style="text-align: center;color: #34D3DB; font-size: 30px;font-weight: 900;">Any Query!</div>
+   <form class="form" action="contactform.php" method="POST">
+    <p class="username">
+      <label for="name" class="aa">Name</label><br>
+      <input type="text" name="name" class="inp" id="name" placeholder="Enter Your Name" required><br>
+    </p>  
+    <p class="useremail">
+      <label for="email" class="aa">Email</label><br>
+      <input type="text" name="email" id="email" class="inp" placeholder="mail@example.com">
+      
+    </p>
+    <p class="usercontact">
+      <label for="contact"class="aa">Phone number</label><br>
+      <input type="text" name="contact" id="contact" class="inp" placeholder="contact no." >
+      
+    </p>
+    <p class="usertext">
+      <label for="text"class="aa">Comments</label><br>
+      <textarea name="text" class="inp" placeholder="Write something to us" ></textarea>
+                        
+    </p>
+    <p class="usersubmit">
+      <input type="submit" class="sub-btn" name="submit" value="Send" >
+    </p>
+    </form>
+
+</body>
+</html>

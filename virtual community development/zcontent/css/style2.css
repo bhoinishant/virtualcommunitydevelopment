@@ -1,0 +1,69 @@
+body{
+	width: 100%;
+}
+.section-title {
+	text-align: center;
+	
+	margin-bottom: 110px;
+}
+
+.section-title h2 {
+	font-family: Impact, fantasy; 
+	font-size: 20px;
+	font-weight: 60;
+
+}
+
+.section-title p {
+	color: white;
+	margin-bottom: 0;
+	font-weight: 500;
+}
+.spad {
+	padding-top: 11px;
+	padding-bottom: 11px;
+}
+
+.categorie-item {
+	border-radius: 20px;
+	margin-bottom: 34px;
+	background: #edf4f6;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+.categorie-item .ci-thumb {
+	background-color: #4E78ED;
+	background-size: cover;
+	height: 120px;
+	-webkit-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.categorie-item .ci-text {
+	padding: 40px 30px;
+}
+
+.categorie-item .ci-text h5 {
+	margin-bottom: 5px;
+}
+
+.categorie-item .ci-text span {
+	font-size: 18px;
+	font-weight: 600;
+	color: #d82a4e;
+}
+
+.categorie-item:hover {
+	background: #8E36F3;
+}
+
+.categorie-item:hover .ci-text h5,
+.categorie-item:hover .ci-text p,
+.categorie-item:hover .ci-text span {
+	color: #fff;
+}
+
+
